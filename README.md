@@ -14,7 +14,7 @@ docker build -t dissectmalware/yaradbg .
 # 2. Run YaraDbg Container using Docker
 First create a new container based on Yaradbg image you created in Build Docker Image section
 ```
-docker run -p 7071:7071 -p 8081:80 --runtime=runc -d dissectmalware/yaradbg:latest
+docker run -p 7071:7071 -p 8081:80 -d dissectmalware/yaradbg:latest
 ```
 Then browse http://localhost:8081
 
